@@ -4,3 +4,8 @@ export type FeatureType = {
   image: string;
   points: string[];
 };
+
+export type FooterLinkItem = {
+  title: string;
+  path: string;
+};

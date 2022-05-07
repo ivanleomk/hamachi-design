@@ -4,7 +4,11 @@ type ContactFormInputProps = {
   label: string;
   placeholder: string;
   type: "text" | "textarea";
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => void;
   value: string;
 };
 
