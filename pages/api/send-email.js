@@ -2,8 +2,8 @@ import aws from "aws-sdk";
 
 const ses = new aws.SES({
   region: "ap-southeast-1",
-  accessKeyId: process.env.AWS_ACCESS_KEY,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  accessKeyId: process.env.IVAN_AWS_ACCESS_KEY,
+  secretAccessKey: process.env.IVAN_AWS_SECRET_ACCESS_KEY,
 });
 
 function sendEmail(emailTo, message, name) {
