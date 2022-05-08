@@ -7,6 +7,14 @@ import Header from "../components/Header";
 const GenericLayout = ({ children }) => {
   return (
     <>
+      {/* Google Analytics Tracking */}
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="XR11waWayMIN9jN3myE-wg97dJD-JsSY6zzOwzQRIoI"
+        />
+      </Head>
+
       <Script
         id="Google Tag Manager"
         dangerouslySetInnerHTML={{
