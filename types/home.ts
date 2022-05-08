@@ -9,3 +9,8 @@ export type FooterLinkItem = {
   title: string;
   path: string;
 };
+
+export type HeaderLinkItem = {
+  path: string;
+  title: string;
+};

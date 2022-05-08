@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import GenericLayout from "../layout/GenericLayout";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -16,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         draggable
         pauseOnHover
       />
-      <Component {...pageProps} />
+      <GenericLayout>
+        <Component {...pageProps} />
+      </GenericLayout>
     </>
   );
 }

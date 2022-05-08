@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import ContactFormInput from "./ContactFormInput";
-
 import ContactFormSubmitButton from "./ContactFormSubmitButton";
 
 const ContactForm = () => {
@@ -52,7 +51,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="relative z-10 w-full max-w-2xl mt-20 lg:mt-0 lg:w-5/12">
+    <div className="relative z-10 w-full max-w-2xl mt-20 ">
       <div className="relative z-10 flex flex-col items-start justify-start p-10 bg-white shadow-2xl rounded-xl">
         <h4 className="w-full font-serif text-4xl font-medium leading-snug">
           Get in Touch

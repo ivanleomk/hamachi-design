@@ -34,7 +34,10 @@ const ContactFormInput = ({
         />
       ) : (
         <textarea
-          className="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black"
+          className="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black "
+          style={{
+            minHeight: "200px",
+          }}
           placeholder={placeholder}
           value={value}
           onChange={(e) => onChange(e)}
