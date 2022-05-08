@@ -33,7 +33,7 @@ const AboutContainer = () => {
                 method might not work for everyone and that&apos;s ok.{" "}
               </p>
               <p>
-                Once we've got that out of the way, we then proceed to do a
+                Once we&apos;ve got that out of the way, we then proceed to do a
                 quick audit of your existing SEO strategies and online presence,
                 checking to see how your competitors are doing.
               </p>
