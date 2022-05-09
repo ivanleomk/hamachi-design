@@ -25,20 +25,19 @@ const GenericLayout = ({ children }) => {
         })(window,document,'script','dataLayer','GTM-52ZBSDX');`,
         }}
       />
-      <body>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<!-- Google Tag Manager (noscript) -->
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52ZBSDX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->`,
-          }}
-        />
+        }}
+      />
 
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <Header />
+      {children}
+      <Footer />
     </>
   );
 };
