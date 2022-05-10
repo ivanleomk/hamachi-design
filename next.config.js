@@ -5,6 +5,12 @@ const nextConfig = {
   images: {
     domains: ["cdn.devdojo.com"],
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/sitemap-generator");
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
