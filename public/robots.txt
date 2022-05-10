@@ -1,0 +1,6 @@
+Sitemap: https://hamachi-design.com/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
