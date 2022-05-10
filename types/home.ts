@@ -14,3 +14,14 @@ export type HeaderLinkItem = {
   path: string;
   title: string;
 };
+
+export type PostData = {
+  frontMatter: {
+    date: string;
+    description: string;
+    tags: string[];
+    thumbnailUrl: string;
+    title: string;
+  };
+  slug: string;
+};

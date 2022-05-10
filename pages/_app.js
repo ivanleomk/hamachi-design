@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import GenericLayout from "../layout/GenericLayout";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <ToastContainer
