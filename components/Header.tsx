@@ -12,10 +12,10 @@ const HeaderItems: HeaderLinkItem[] = [
     path: "/about",
     title: "About",
   },
-  // {
-  //   path: "/blog",
-  //   title: "Blog",
-  // },
+  {
+    path: "/blog",
+    title: "Blog",
+  },
 ];
 
 const Header = () => {

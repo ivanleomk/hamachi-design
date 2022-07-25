@@ -13,6 +13,7 @@ import Blockquote from "../../components/Article/Blockquote";
 import ArticleTag from "../../components/Article/ArticleTag";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import ContactForm from "../../components/ContactForm";
 
 const components = {
   table: Table,
@@ -75,6 +76,7 @@ const Post = ({ post, content }: PostProps) => {
           <div className="col-span-3">
             {" "}
             <MDXRemote {...content} components={components} />
+            <ContactForm />
           </div>
         </div>
       </div>
