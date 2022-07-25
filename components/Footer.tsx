@@ -7,10 +7,10 @@ const FooterItems: FooterLinkItem[] = [
     title: "About",
     path: "/about",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
 ];
 
 const Footer = () => {

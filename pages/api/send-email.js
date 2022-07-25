@@ -14,11 +14,11 @@ function sendEmail(emailTo, message, name) {
     Message: {
       Body: {
         Html: {
-          Data: generateEmailTemplate(message, name),
+          Data: generateEmailTemplate(message, emailTo, name),
         },
       },
 
-      Subject: { Data: "From: ivanleo97@gmail.com" },
+      Subject: { Data: "Customer Contact" },
     },
     Source: "admin@hamachi-design.com",
   };
@@ -47,7 +47,7 @@ export default async function handler(req, res) {
   }
 }
 
-const generateEmailTemplate = (message, name) => {
+const generateEmailTemplate = (message, email, name) => {
   const emailTemplate = `<!DOCTYPE html>
   <html>
     <head>
@@ -278,7 +278,7 @@ const generateEmailTemplate = (message, name) => {
                               margin-bottom: 15px;
                             "
                           >
-                            Thanks for dropping us an email. We'll get back to you
+                            Thanks for dropping us an email. We'll get back to you at ${email}
                             within 24-48 hours upon recieving the email. If you
                             don't get a response from us, feel free to email us at
                             sales@hamachi-design.com directly.
@@ -306,6 +306,14 @@ const generateEmailTemplate = (message, name) => {
                             In the meantime here's a copy of what you sent over to
                             us
                           </p>
+
+                          <p
+                          style = "
+                            font-family: sans-serif;
+                            font-size: 14px;
+                            text-decoration:underline
+                          "
+                          >Message </p>
                           <p
                             style="
                               font-family: sans-serif;
@@ -315,20 +323,9 @@ const generateEmailTemplate = (message, name) => {
                               margin-bottom: 15px;
                             "
                           >
-                            Message : ${message}
+                            ${message}
                           </p>
   
-                          <p
-                            style="
-                              font-family: sans-serif;
-                              font-size: 14px;
-                              font-weight: normal;
-                              margin: 0;
-                              margin-bottom: 15px;
-                            "
-                          >
-                            Looking forward to chatting soon. :)
-                          </p>
                         </td>
                       </tr>
                     </table>

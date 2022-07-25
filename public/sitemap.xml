@@ -2,38 +2,21 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
     <loc>http://localhost:3000/about</loc>
-    <lastmod>2022-05-10T14:44:35.640Z</lastmod>
+    <lastmod>2022-07-25T01:16:52.242Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000</loc>
-    <lastmod>2022-05-10T14:44:35.640Z</lastmod>
+    <lastmod>2022-07-25T01:16:52.242Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/blog/index</loc>
-    <lastmod>2022-05-10T14:44:35.640Z</lastmod>
+    <lastmod>2022-07-25T01:16:52.242Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
-    <loc>http://localhost:3000/blog/getting-started</loc>
-    <lastmod>2022-05-10T14:44:35.639Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>http://localhost:3000/blog/second-sample-article</loc>
-    <lastmod>2022-05-10T14:44:35.639Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>http://localhost:3000/blog/third-sample-article</loc>
-    <lastmod>2022-05-10T14:44:35.639Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  
   </urlset>
